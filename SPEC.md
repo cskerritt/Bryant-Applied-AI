@@ -1,6 +1,6 @@
 # Reference Website Specification
 
-**Status:** Draft. Coding is intentionally blocked until Modules 1 through 4 are completed.
+**Status:** Draft after Checkpoint 2 research. Human Gate 2 review is pending, and coding is intentionally blocked until Modules 3 and 4 are completed.
 
 ## 1. Purpose
 
@@ -8,19 +8,21 @@ Create a beginner-readable, accessible, responsive educational demonstration of 
 
 ## 2. Intended visitor hypothesis
 
-An owner, revenue leader, or sales-operations leader at a small B2B professional-services firm who believes potentially viable inbound leads are being handled inconsistently.
+The person accountable for inbound opportunity flow at a U.S. B2B professional-services employer firm with 10 to 99 employees, at least one inbound inquiry channel, and enough process records to examine. Firms with 20 to 99 employees are the higher-readiness hypothesis.
 
-This audience statement remains a hypothesis until the research module documents supporting evidence.
+This is a deliberately bounded test hypothesis, not a supported description of an established market. Research did not establish a consistent buyer title, problem prevalence, urgency, or willingness to buy. Initial copy must therefore be role-neutral and must not present the segment boundary as empirically optimal.
 
 ## 3. Offer
 
-The AI Lead Response Sprint is a fictional fixed-scope consulting engagement. The site may explain the proposed process, intended outcomes, boundaries, and next step. It may not present unverified performance results as facts.
+The AI Lead Response Sprint is a fictional fixed-scope consulting engagement. Its evidence-safe service description is to map how inquiries are captured, qualified, assigned, followed up, handed off, and measured, then create a documented future-state workflow with clear ownership and implementation priorities.
+
+The site may explain this proposed process, concrete deliverables, boundaries, and next step. It may not claim a universal response-time standard, problem prevalence, conversion lift, revenue lift, return on investment, or commercial validation. AI is an assistive design element subject to human review, not a promised autonomous outcome.
 
 ## 4. Conversion goals
 
 ### Primary
 
-Submit a request for a 20-minute diagnostic call.
+Submit a request for a 20-minute fit review. This conversion remains a test hypothesis.
 
 ### Secondary
 
@@ -42,6 +44,8 @@ Request the Lead Response Checklist.
 6. Frequently asked questions
 7. Primary lead form
 8. Educational disclaimer and footer navigation
+
+Any external factual statement must have human-approved wording and scope in `artifacts/reference-claim-ledger.csv` before it enters page copy.
 
 ## 7. Lead form boundary
 
@@ -94,6 +98,7 @@ The reference implementation is complete only when:
 5. No real personal data or secret appears in the repository.
 6. Analytics events, if enabled, are documented and verified.
 7. A rollback procedure is documented.
+8. Every objective public claim maps to a human-approved claim-ledger entry and suitable evidence.
 
 ## 11. Out of scope
 
@@ -101,4 +106,5 @@ The reference implementation is complete only when:
 - Collecting real sales leads during the classroom reference exercise
 - Automated cold email or mass scraping
 - AI-generated prospect facts without source verification
+- The repeated “five-minute,” “21x,” “100x,” “70% ignored,” “first responder wins,” or fixed-follow-up statistics rejected during Gate 2
 - A CRM, authenticated portal, payment system, or production sales operation

@@ -9,12 +9,26 @@ The website is the shared artifact through which students learn the sales proces
 | Gate | Question | Evidence required |
 | --- | --- | --- |
 | 1. Offer | Is the proposed buyer, problem, offer, and next step specific enough to test? | Offer brief and assumption log |
-| 2. Evidence | Which important assumptions have support, remain uncertain, or were contradicted? | Source-backed research log |
+| 2. Evidence | Which important assumptions have support, remain uncertain, or were contradicted, and which claims may be used publicly? | Research plan, evidence log, claim ledger, revised buyer and offer hypotheses, peer retrace, and signed gate record |
 | 3. Specification | Could another person build and test the intended funnel without guessing? | Funnel map, `SPEC.md`, wireframe, content inventory, acceptance tests |
 | 4. Launch | Does the deployed experience work, handle data responsibly, and match the specification? | QA record, test submission, deployment record, rollback steps |
 | 5. Learning | What did observed behavior support, fail to support, or leave unresolved? | Measurement report and next experiment |
 
 Students may not treat AI output as evidence for passing Gates 1, 2, or 5.
+
+## Repository checkpoint convention
+
+All modules extend the same GitHub repository. Each checkpoint should:
+
+1. Start from the latest approved checkpoint.
+2. Use a focused branch named for the active module or checkpoint.
+3. Change only the lesson, reusable templates, completed reference artifacts, and implementation files needed for that checkpoint.
+4. Run the module’s documented checks and review the complete diff.
+5. Create one focused review-candidate commit after the automated checks pass.
+6. Have the human reviewer evaluate that named commit and record the gate outcome. Put required corrections in a later commit rather than rewriting the reviewed history.
+7. Push the branch only when authorized, then merge through the course’s chosen review process after the applicable gate passes.
+
+Do not split the course into disconnected repositories. The accumulating Git history is part of the student evidence portfolio.
 
 ## Module sequence
 
@@ -24,7 +38,9 @@ Define the buyer, problem, offer, boundaries, primary conversion, and assumption
 
 ### Module 2: Prospect and market research
 
-Create research questions from the assumption log. Use verifiable sources, record URLs and dates, distinguish direct evidence from inference, and revise the offer brief.
+Precommit falsifiable questions and disconfirming signals before searching. Use AI only to locate candidates, open and trace every relied-on source, record exact locations and limitations, distinguish direct evidence from inference, and conduct contrary searches. Revise the buyer hypothesis, offer brief, and public claim ledger. A human peer retraces three randomly selected evidence entries before the noncompensatory Gate 2 decision.
+
+The gate measures research integrity and decision readiness. It does not require evidence that the offer is commercially validated. An unresolved assumption may proceed only as a bounded test hypothesis with a defined disconfirming signal and no public presentation as established fact.
 
 ### Module 3: Funnel architecture
 

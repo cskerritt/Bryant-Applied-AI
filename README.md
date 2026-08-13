@@ -6,7 +6,11 @@ This repository is a beginner-friendly teaching project and a working reference 
 
 ## Current checkpoint
 
-Checkpoint 1 establishes the course architecture, fictional offer, agent instructions, research standards, and first student module. The reference website will be implemented incrementally after its offer and audience assumptions are reviewed.
+Checkpoint 2 adds a complete, source-traceable prospect and market research lesson. It includes reusable research and claim-control templates, a completed reference investigation, and a human-reviewable evidence gate. The reference website remains intentionally unbuilt until the funnel and specification gates are complete.
+
+**Repository:** [cskerritt/Bryant-Applied-AI](https://github.com/cskerritt/Bryant-Applied-AI)
+
+Every later module extends this same repository. Do not create a separate website repository for each checkpoint.
 
 ## Reference case
 
@@ -14,12 +18,15 @@ The example uses a clearly fictional company:
 
 - **Company:** Applied Revenue Lab
 - **Offer:** AI Lead Response Sprint
-- **Service:** A fixed-scope consulting engagement that helps small B2B professional-services firms examine and improve how inbound leads are received, qualified, assigned, and followed up
-- **Primary buyer hypothesis:** Owner, revenue leader, or sales operations leader
-- **Primary conversion:** Request a 20-minute diagnostic call
+- **Service:** A fixed-scope consulting engagement that maps how inbound inquiries are captured, qualified, assigned, followed up, handed off, and measured, then documents a future-state workflow and implementation priorities
+- **Test segment hypothesis:** U.S. B2B professional-services employer firms with 10 to 99 employees, with 20 to 99 treated as the higher-readiness hypothesis, an inbound inquiry channel, and enough process records to examine
+- **Buyer hypothesis:** The person accountable for inbound opportunity flow; the exact title remains unresolved
+- **Primary conversion hypothesis:** Request a 20-minute fit review
 - **Secondary conversion:** Request the Lead Response Checklist
 
-These are teaching hypotheses, not established market facts. Students must distinguish assumptions from evidence throughout the project.
+The process design is evidence-informed. Segment demand, buyer title, urgency, price, willingness to buy, and conversion preference remain test hypotheses. The example does not claim that the offer is commercially validated.
+
+See [Decision 002](docs/decisions/002-reference-research-boundary.md) for the exact research boundary and rejected claims.
 
 ## What students will learn
 
@@ -59,8 +66,8 @@ The advanced path reuses the same offer, copy, design tokens, events, and accept
 | Module | Topic | Required output |
 | --- | --- | --- |
 | 1 | Offer and audience | Approved offer brief and assumption log |
-| 2 | Prospect and market research | Evidence log and ideal-customer hypothesis |
-| 3 | Funnel architecture | Traffic-to-conversion funnel map |
+| 2 | Prospect and market research | Research plan, evidence log, claim ledger, ideal-customer hypothesis, and signed Gate 2 record |
+| 3 | Funnel architecture | Traffic-to-conversion funnel map and stage ownership |
 | 4 | Website specification | `SPEC.md`, wireframe, content inventory, acceptance criteria |
 | 5 | Repository and agent setup | Working local repository and verified agent instructions |
 | 6 | Page structure and copy | Semantic HTML and reviewed copy |
@@ -83,32 +90,44 @@ See [Course plan](docs/course-plan.md) for gates, grading evidence, and sequenci
 ├── CLAUDE.md                         # Claude Code entry point
 ├── SPEC.md                           # Reference-site specification
 ├── artifacts/
-│   └── reference-offer-brief.md      # Completed fictional example
+│   ├── reference-offer-brief.md      # Revised fictional offer hypothesis
+│   └── reference-*.{md,csv}          # Completed Module 2 examples
 ├── docs/
 │   ├── course-plan.md
+│   ├── evidence-and-claims-policy.md
 │   ├── quality-baseline.md
 │   ├── working-with-coding-agents.md
 │   └── decisions/001-teaching-stack.md
 ├── example-site/                     # Website code will be built here
 ├── modules/
-│   └── 01-offer-and-audience/README.md
+│   ├── 01-offer-and-audience/README.md
+│   └── 02-prospect-and-market-research/README.md
 ├── prompts/
-│   └── 01-offer-discovery.md
+│   ├── 01-offer-discovery.md
+│   └── 02-prospect-and-market-research.md
+├── scripts/
+│   └── checkpoint-02-check.sh        # Reproducible structural checks
 ├── templates/
 │   ├── assumption-log.csv
+│   ├── claim-ledger.csv
 │   ├── data-map.csv
+│   ├── evidence-log.csv
+│   ├── ideal-customer-hypothesis.md
 │   ├── measurement-plan.csv
-│   └── offer-brief.md
+│   ├── module-02-gate.md
+│   ├── offer-brief.md
+│   ├── research-plan.csv
+│   └── source-audit.md
 └── references.md
 ```
 
 ## Start here
 
 1. Read this file and [Course plan](docs/course-plan.md).
-2. Complete [Module 1](modules/01-offer-and-audience/README.md).
-3. Use the prompts in [Offer discovery](prompts/01-offer-discovery.md).
-4. Compare your work with the [reference offer brief](artifacts/reference-offer-brief.md).
-5. Do not begin coding the site until the Module 1 decision gate is passed.
+2. Complete [Module 1](modules/01-offer-and-audience/README.md) if you have not already passed Gate 1.
+3. Complete [Module 2](modules/02-prospect-and-market-research/README.md) with the [research prompt pack](prompts/02-prospect-and-market-research.md).
+4. Compare your work with the completed reference artifacts in `artifacts/`.
+5. Apply the noncompensatory Gate 2 review. Do not begin site coding because Modules 3 and 4 remain unfinished.
 
 Before any public deployment, read the [Quality baseline](docs/quality-baseline.md).
 
@@ -118,6 +137,6 @@ The reference deployment is a fictional educational demonstration. It must displ
 
 ## Source policy
 
-Use primary or authoritative sources wherever possible. Record unsupported statements as hypotheses. Never fabricate customer interviews, quotations, testimonials, performance results, prices, certifications, client logos, or legal claims.
+Use sources that fit the precise question, trace relied-on findings to an opened source and exact location, and record unsupported statements as hypotheses. AI output and search-result snippets are discovery aids, not evidence. Never fabricate customer interviews, quotations, testimonials, performance results, prices, certifications, client logos, or legal claims.
 
-See [References](references.md) for current official documentation used in the project.
+Read the [Evidence and claims policy](docs/evidence-and-claims-policy.md) and [References](references.md) before conducting research or drafting public claims.
