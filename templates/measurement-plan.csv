@@ -1,0 +1,2 @@
+measurement_id,business_question,event_name,exact_trigger,allowed_parameters,kpi_or_formula,owner,privacy_classification,test_method,status,last_verified
+M-001,"Do visitors complete the inquiry path?",generate_lead,"Confirmed successful form response","form_id; offer_id","successful leads divided by eligible landing-page sessions","Course owner",nonpersonal_only,"Synthetic submission; verify one success event and zero error events",planned,

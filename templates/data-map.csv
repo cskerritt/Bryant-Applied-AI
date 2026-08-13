@@ -1,0 +1,2 @@
+data_id,page_or_system,data_element,purpose,required,destination_or_vendor,access_roles,retention_period,deletion_method,privacy_classification,notes,last_verified
+D-001,lead_form,"Example: work email","Respond to an inquiry",yes,"Form processor","Course owner","Define before launch","Provider deletion workflow",personal_data,"Use synthetic data in class",

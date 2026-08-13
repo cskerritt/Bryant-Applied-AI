@@ -1,8 +1,20 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets and local agent preferences
 .env
 .env.*
 !.env.example
-.DS_Store
+CLAUDE.local.md
+.claude/settings.local.json
+
+# Logs and generated output
+*.log
 node_modules/
 dist/
 .netlify/
-CLAUDE.local.md
+.vercel/
+coverage/
